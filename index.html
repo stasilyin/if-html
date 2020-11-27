@@ -100,5 +100,51 @@
             </tfoot>
         </table>
     </details>
+    <details><summary>Форма</summary>
+    <form action='/' method='GET'>
+        <fieldset>
+            <legend>My first form</legend>
+            <div>
+                <label for = "name">Name</label><br>
+                <input type="text" name = "name" id = "name" placeholder = "Name" required>
+            </div>
+            <div>
+                <label for = "email">Email</label><br>
+                <input type="email" name = "email" id = "email" required>
+            </div> 
+            <div>  
+                <label for = "password">Password</label><br>
+                <input type="password" name = "password" id = "password" required><br>
+            </div>
+            <div>
+                <label for = "range">You programming level?</label><br>
+                <input type="range" name = "range" id = "range" min = "1" max = "10">
+            </div>   
+            <div>
+                <p>What does HTML stand for?</p>
+                <input type="checkbox" name="Hyperlinks" id="Hyperlinks"><label for = "Hyperlinks">Hyperlinks and Text Markup Language</label> <br>
+                <input type="checkbox" name="Home" id="Home"><label for = "Home">Home Tool Markup Language</label><br>
+                <input type="checkbox" name="Hyper" id="Hyper"><label for = "Hyper">Hyper Text Markup Language</label>
+            </div>
+            <div>
+                <p>What does HTTP stand for?</p>
+                <input type="radio" name="HTTP" id="HTTP1" value = "HTTP1"><label for = "HTTP1">Hyper Text Translate Protocol</label> <br>
+                <input type="radio" name="HTTP" id="HTTP2" value = "HTTP2"><label for = "HTTP2">Hyper Text Transmission Protocol</label><br>
+                <input type="radio" name="HTTP" id="HTTP3" value = "HTTP3"><label for = "HTTP3">Hyper Text Transfer Language</label>
+            </div>
+            <div>
+                <label for="comment">Comment</label><br>
+                <textarea id = "comment" name = "comment" maxlength = 500 placeholder = "Comment..."></textarea>
+            </div>
+            <div>
+                <label for = "list1">What does HTML stand for?</label><br>
+                <select name="list1">
+                    <option>Your answer</option>
+                </select><br><br>
+            </div>
+            <div><input type = "submit" value="Отправить"></div>
+        </fieldset>
+    </form>
+</details>
 </body>
 </html>
