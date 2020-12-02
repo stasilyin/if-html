@@ -12,7 +12,6 @@ h2 {
   line-height: 46.88px;
   color: #383838;
 }
-
 .container {
   width: 100%;
   max-width: 1232px;
@@ -50,24 +49,6 @@ h2 {
   margin-bottom: 122px;
 }
 
-.offer:nth-child(2) {
-  margin-left: 231px;
-}
-.offer:nth-child(3) {
-  margin-left: 221.33px;
-}
-.offer:last-child {
-  margin-left: 221.33px;
-}
-.offer:first-child p {
-  margin-top: 52.17px;
-}
-.offer:nth-child(2) p {
-  margin-top: 56.33px;
-}
-.offer:nth-child(3) p {
-  margin-top: 64.67px;
-}
-.offer:nth-child(4) p {
-  margin-top: 60.5px;
+.offerbox img {
+  margin-bottom: 52px;
 }
