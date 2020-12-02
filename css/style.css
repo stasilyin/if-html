@@ -21,7 +21,7 @@ h2 {
 
 .sectionOffer {
   text-align: center;
-  margin-top: 122px;
+  margin-top: 120px;
 }
 
 .sectionOffer h2::after {
@@ -46,7 +46,7 @@ h2 {
   justify-content: space-between;
   text-align: center;
   align-items: flex-end;
-  margin-bottom: 120px;
+  margin-bottom: 122px;
 }
 
 .offer:nth-child(2) {
