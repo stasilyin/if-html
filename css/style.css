@@ -43,14 +43,14 @@ h2 {
 
 .offerbox {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   align-items: baseline;
   margin-bottom: 120px;
 }
 
 .offer:nth-child(2) {
-  margin-left: 306px;
+  margin-left: 231px;
 }
 .offer:nth-child(3) {
   margin-left: 221.33px;
