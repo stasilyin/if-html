@@ -1,0 +1,54 @@
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 46.88px;
+  color: #383838;
+}
+.container {
+  width: 100%;
+  max-width: 1232px;
+  margin: 0 auto;
+}
+
+.sectionOffer {
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 84.17px;
+}
+
+.sectionOffer h2::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100px;
+  background-color: #f5bd41;
+  margin: 20px auto;
+}
+
+.sectionOffer p {
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 28px;
+  color: #383838;
+}
+
+.offerbox {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: flex-end;
+  margin-bottom: 122px;
+}
+
+.offerbox img {
+  margin-bottom: 52.17px;
+}
