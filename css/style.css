@@ -59,3 +59,48 @@ h2 {
   line-height: 28px;
   color: #383838;
 }
+
+/*footer*/
+footer {
+  background-color: #10367c;
+}
+.footer {
+  display: flex;
+  color: #ffffff;
+  flex-wrap: wrap;
+  padding-top: 120px;
+}
+.footer-items {
+  display: flex;
+  flex-direction: column;
+}
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 23.44px;
+}
+
+.footer h4 {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 23.44px;
+}
+
+.items2 {
+  margin-left: 223px;
+  margin-right: 284px;
+  margin-bottom: 64px;
+}
+.reserved-text {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16.41px;
+  color: #ffffff;
+  margin-bottom: 120px;
+}
