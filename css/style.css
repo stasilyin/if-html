@@ -105,3 +105,8 @@ footer {
   color: #ffffff;
   margin-bottom: 120px;
 }
+/*header*/
+header {
+  background: url(../img/headerphoto.png) no-repeat center / cover;
+  height: 100vh;
+}
