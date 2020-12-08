@@ -1,3 +1,4 @@
+@import url("./fonts.css");
 body {
   font-family: "Roboto", sans-serif;
   padding: 0;
@@ -21,7 +22,7 @@ h2 {
 .sectionOffer {
   text-align: center;
   margin-top: 120px;
-  margin-bottom: 84.17px;
+  margin-bottom: 80px;
 }
 
 .sectionOffer h2::after {
@@ -33,7 +34,26 @@ h2 {
   margin: 20px auto;
 }
 
-.sectionOffer p {
+.offerbox {
+  display: flex;
+  margin-bottom: 122px;
+}
+
+.offer {
+  width: 25%;
+  text-align: center;
+}
+
+.imagewrapperoffer {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.item-text-offer {
   font-size: 24px;
   font-weight: normal;
   font-style: normal;
@@ -41,14 +61,47 @@ h2 {
   color: #383838;
 }
 
-.offerbox {
+/*footer*/
+footer {
+  background-color: #10367c;
+}
+.footer {
   display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: flex-end;
-  margin-bottom: 122px;
+  color: #ffffff;
+  flex-wrap: wrap;
+  padding-top: 120px;
+}
+.footer-items {
+  display: flex;
+  flex-direction: column;
+}
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 23.44px;
 }
 
-.offerbox img {
-  margin-bottom: 52.17px;
+.footer h4 {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 23.44px;
+}
+
+.items2 {
+  margin-left: 223px;
+  margin-right: 284px;
+  margin-bottom: 64px;
+}
+.reserved-text {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16.41px;
+  color: #ffffff;
+  margin-bottom: 120px;
 }
