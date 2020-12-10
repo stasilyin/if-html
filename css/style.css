@@ -2,10 +2,15 @@
 body {
   font-family: "Roboto", sans-serif;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   box-sizing: border-box;
 }
-
+ul,
+li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
 h2 {
   font-size: 40px;
   font-weight: 500;
@@ -104,4 +109,124 @@ footer {
   line-height: 16.41px;
   color: #ffffff;
   margin-bottom: 120px;
+}
+/*header*/
+header {
+  background: url(../img/headerphoto.png) no-repeat center / cover;
+  min-height: 100vh;
+}
+.nav {
+  display: flex;
+  padding-top: 51px;
+  align-items: center;
+  margin-bottom: 196px;
+}
+
+.menuheader {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.menuheader li,
+.logo {
+  margin-right: 24px;
+  border-bottom: 4px transparent solid;
+  transition: 0.4s;
+}
+.menuheader li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.13px;
+  display: flex;
+  align-items: center;
+}
+.menuheader li:nth-child(2) {
+  margin-right: 48px;
+}
+
+.menuitem:hover {
+  border-bottom: 4px #f5bd41 solid;
+}
+
+.heading {
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 58.59px;
+  margin-bottom: 100px;
+}
+
+/*headerForm*/
+.labelheader {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.09px;
+  margin-bottom: 24px;
+  margin-left: 24px;
+}
+.labelcity {
+  margin-right: 221px;
+}
+
+.inputs {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  padding: 0;
+  margin: 0;
+  height: 64px;
+  line-height: 21px;
+  border: 0;
+  outline: none;
+  border: 3px solid none;
+  font-size: 18px;
+  font-weight: 400;
+}
+.city {
+  width: 467px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-right: 3px solid transparent;
+}
+
+.check-in-out {
+  position: absolute;
+  width: 260px;
+  margin-left: 467px;
+  border-radius: 8px;
+  border: 3px solid #f5bd41;
+}
+.search {
+  width: 192px;
+  background-color: #3077c6;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  border-radius: 8px;
+  position: absolute;
+  margin-left: 1040px;
+}
+.adults-children {
+  width: 314px;
+  margin-left: 259px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+}
+.linkstore {
+  margin-top: 120px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+.dwnlinkgplay {
+  margin-right: 16px;
 }
