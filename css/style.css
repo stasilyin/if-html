@@ -183,9 +183,11 @@ header {
 input {
   padding: 0;
   margin: 0;
-  border: 3px solid transparent;
   height: 64px;
   line-height: 21px;
+  border: 0;
+  outline: none;
+  border: 3px solid none;
 }
 .city {
   width: 467px;
@@ -196,7 +198,7 @@ input {
 .check-in-out {
   position: absolute;
   width: 260px;
-  margin-left: 460px;
+  margin-left: 467px;
   border-radius: 8px;
   border: 3px solid #f5bd41;
 }
@@ -212,8 +214,8 @@ input {
   margin-left: 1040px;
 }
 .adults-children {
-  width: 320px;
-  margin-left: 248px;
+  width: 322px;
+  margin-left: 259px;
 }
 .linkstore {
   margin-top: 120px;
