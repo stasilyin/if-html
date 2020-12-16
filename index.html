@@ -57,13 +57,21 @@
           <div class="headerform">
             <form action="/" method="GET">
               <div class="labelheader">
-                <label class="labelcity">Your destination or hotel name</label>
-                <label>Check-in — Check-out</label>
+                <label for="city" class="labelcity"
+                  >Your destination or hotel name</label
+                >
+                <label for="check-in-out">Check-in — Check-out</label>
               </div>
               <div class="inputs">
-                <input type="text" class="city" placeholder="New York" /><input
+                <input
+                  type="text"
+                  id="city"
+                  class="city"
+                  placeholder="New York"
+                /><input
                   type="date"
                   class="check-in-out"
+                  id="check-in-out"
                 /><input
                   type="text"
                   class="adults-children"
@@ -89,7 +97,49 @@
     </header>
     <section>
       <div class="container">
-        <div class="sectionOffer">
+        <div class="offer">
+          <div class="offer__title"><h2>What do we offer</h2></div>
+          <div class="offer__row">
+            <div class="offer__column">
+              <div class="item-offer__icon">
+                <svg class="item-offer__svg support" viewBox="0 0 75 91.67">
+                  <use xlink:href="./img/sprite.svg#support_icon"></use>
+                </svg>
+              </div>
+              <span>Support 24/7</span>
+            </div>
+            <div class="offer__column">
+              <div class="item-offer__icon">
+                <svg class="item-offer__svg message">
+                  <use
+                    xlink:href="./img/sprite.svg#message_icon"
+                    viewBox="0 0 83.33 83.33"
+                  ></use>
+                </svg>
+              </div>
+
+              <span>Communicate directly</span>
+            </div>
+            <div class="offer__column">
+              <div class="item-offer__icon">
+                <svg class="item-offer__svg device" viewBox="0 0 100 66.67">
+                  <use xlink:href="./img/sprite.svg#device_icon"></use>
+                </svg>
+              </div>
+              <div class="item-offer__title"><span>Book online</span></div>
+            </div>
+            <div class="offer__column">
+              <div class="item-offer__icon">
+                <svg class="item-offer__svg like" viewBox="0 0 91.67 83.33">
+                  <use xlink:href="./img/sprite.svg#like_icon"></use>
+                </svg>
+              </div>
+
+              <span>Real guest reviews</span>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="sectionOffer">
           <h2>What do we offer</h2>
         </div>
         <div class="offerbox">
@@ -117,10 +167,10 @@
             </div>
             <span class="item-text-offer">Real guest reviews</span>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
-    <footer>
+    <footer display="none">
       <div class="container">
         <div class="footer">
           <div class="footer-items items1">
