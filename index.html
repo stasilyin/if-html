@@ -29,7 +29,7 @@
     <title>TripHouse</title>
   </head>
   <body>
-    <header>
+    <!-- <header>
       <div class="container">
         <nav class="nav">
           <img src="./img/logoBig.svg" alt="logoTripHouse" class="logo" />
@@ -57,13 +57,21 @@
           <div class="headerform">
             <form action="/" method="GET">
               <div class="labelheader">
-                <label class="labelcity">Your destination or hotel name</label>
-                <label>Check-in — Check-out</label>
+                <label for="city" class="labelcity"
+                  >Your destination or hotel name</label
+                >
+                <label for="check-in-out">Check-in — Check-out</label>
               </div>
               <div class="inputs">
-                <input type="text" class="city" placeholder="New York" /><input
+                <input
+                  type="text"
+                  id="city"
+                  class="city"
+                  placeholder="New York"
+                /><input
                   type="date"
                   class="check-in-out"
+                  id="check-in-out"
                 /><input
                   type="text"
                   class="adults-children"
@@ -86,36 +94,45 @@
           /></a>
         </div>
       </div>
-    </header>
+    </header> -->
     <section>
       <div class="container">
-        <div class="sectionOffer">
-          <h2>What do we offer</h2>
+        <div class="offer-heading__row">
+          <div class="offer-heading__col-4"><h2>What do we offer</h2></div>
         </div>
-        <div class="offerbox">
-          <div class="offer">
-            <div class="imagewrapperoffer">
-              <img src="./img/support.svg" alt="support image" />
+        <div class="offer__item__row">
+          <div class="offer__column-3">
+            <div class="icon-offer-wrapper">
+              <svg class="item-offer__svg support" viewBox="0 0 75 91.67">
+                <use xlink:href="./img/sprite.svg#support_icon"></use>
+              </svg>
             </div>
-            <span class="item-text-offer">Support 24/7</span>
+            <span>Support 24/7</span>
           </div>
-          <div class="offer">
-            <div class="imagewrapperoffer">
-              <img src="./img/message.svg" alt="communicate image" />
+          <div class="offer__column-3">
+            <div class="icon-offer-wrapper">
+              <svg class="item-offer__svg message" viewBox="0 0 84 84">
+                <use xlink:href="./img/sprite.svg#message_icon"></use>
+              </svg>
             </div>
-            <span class="item-text-offer">Communicate directly</span>
+
+            <span>Communicate directly</span>
           </div>
-          <div class="offer">
-            <div class="imagewrapperoffer">
-              <img src="./img/devices.svg" alt="devices image" />
+          <div class="offer__column-3">
+            <div class="icon-offer-wrapper">
+              <svg class="item-offer__svg device" viewBox="0 0 100 66.67">
+                <use xlink:href="./img/sprite.svg#device_icon"></use>
+              </svg>
             </div>
-            <span class="item-text-offer">Book online</span>
+            <span>Book online</span>
           </div>
-          <div class="offer">
-            <div class="imagewrapperoffer">
-              <img src="./img/like.svg" alt="real guest image" />
+          <div class="offer__column-3">
+            <div class="icon-offer-wrapper">
+              <svg class="item-offer__svg like" viewBox="0 0 91.67 83.33">
+                <use xlink:href="./img/sprite.svg#like_icon"></use>
+              </svg>
             </div>
-            <span class="item-text-offer">Real guest reviews</span>
+            <span>Real guest reviews</span>
           </div>
         </div>
       </div>
@@ -123,30 +140,47 @@
     <footer>
       <div class="container">
         <div class="footer">
-          <div class="footer-items items1">
-            <h4>About</h4>
-            <a href="#">How Triphouse works</a>
-            <a href="#">Careers</a>
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
+          <div class="footer-logo__row">
+            <img src="./img/logo_footer.png" alt="TripHouse logo" />
           </div>
-          <div class="footer-items items2">
-            <h4>Property types</h4>
-            <a href="#">Guest houses</a>
-            <a href="#">Hotels</a>
-            <a href="#">Apartments</a>
-            <a href="#">Villas</a>
-            <a href="#">Holiday homes</a>
-            <a href="#">Hostels</a>
+          <div class="footer-list__row">
+            <div class="footer-list__col-2">
+              <ul class="footer__items items1">
+                <a href="#"><h4>About</h4></a>
+                <li>
+                  <a href="#" class="footer__item">How Triphouse works</a>
+                </li>
+                <li><a href="#" class="footer__item">Careers</a></li>
+                <li><a href="#" class="footer__item">Privacy</a></li>
+                <li><a href="#" class="footer__item">Terms</a></li>
+              </ul>
+            </div>
+            <div class="footer-list__col-2">
+              <ul class="footer__items">
+                <a href="#"><h4>Property types</h4></a>
+                <li><a href="#" class="footer__item">Guest houses</a></li>
+                <li><a href="#" class="footer__item">Hotels</a></li>
+                <li><a href="#" class="footer__item">Apartments</a></li>
+                <li><a href="#" class="footer__item">Villas</a></li>
+                <li><a href="#" class="footer__item">Holiday homes</a></li>
+                <li><a href="#" class="footer__item">Hostels</a></li>
+              </ul>
+            </div>
+            <div class="footer-list__col-2">
+              <ul class="footer__items">
+                <a href="#" class="footer__item"
+                  ><h4 class="footer_items-3">Support</h4></a
+                >
+                <li>
+                  <a href="#" class="footer__item">Contact Customer Service</a>
+                </li>
+                <li><a href="#" class="footer__item">FAQ</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="footer-items items3">
-            <h4>Support</h4>
-            <a href="#">Contact Customer Service</a>
-            <a href="#">FAQ</a>
+          <div class="footer-copyright">
+            <span>&copy;2020 Triphouse. Inc. All rihts reserved</span>
           </div>
-          <span class="reserved-text"
-            >&copy;2020 Triphouse. Inc. All rihts reserved</span
-          >
         </div>
       </div>
     </footer>
