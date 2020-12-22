@@ -46,12 +46,13 @@ h4 {
   justify-content: center;
   padding-top: 120px;
 }
-.offer-heading__row h2::after {
+h2::after {
   content: "";
   display: block;
   height: 4px;
   width: 100px;
   background-color: #f5bd41;
+  transform: ;
   margin: 20px auto;
 }
 .like {
@@ -148,16 +149,24 @@ header {
 .header-menu a {
   position: relative;
 }
-.header-menu a:hover::after {
-  display: inline-block;
+.header-menu__link:after {
+  display: block;
   content: "";
-  width: 100%;
-  height: 2px;
+  width: 0;
+  height: 4px;
   position: absolute;
   background-color: #f5bd41;
-  bottom: -15%;
+  bottom: -12px;
   left: 0;
+  opacity: 0;
 }
+.header-menu__link:hover:after,
+.header-menu__link:active:after {
+  width: 100%;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
 .header-menu a:first-child {
   margin-right: 24px;
 }
