@@ -46,13 +46,13 @@ h4 {
   justify-content: center;
   padding-top: 120px;
 }
-h2::after {
+.offer-heading__col-4 h2::after {
   content: "";
   display: block;
   height: 4px;
   width: 100px;
   background-color: #f5bd41;
-  transform: ;
+
   margin: 20px auto;
 }
 .like {
@@ -250,7 +250,34 @@ header {
 .header-form-mobie_row {
   display: none;
 }
+/* BLOCK GUEST LOVES */
+.guest-loves {
+  background-color: #eaf0f9;
+}
+.guests-loves__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.guests-loves__image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-basis: 25%;
+  position: relative;
+}
+.guest-loves-btn-wrap {
+  width: 40px;
+  height: 40px;
+}
+.guests-loves__image-wrapper {
+  position: relative;
+}
+.guests-loves__image-btn {
+  position: absolute;
 
+}
 /*media mobile*/
 @media only screen and (max-width: 768px) {
   /*header mobile*/
