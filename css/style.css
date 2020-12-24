@@ -258,25 +258,45 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 120px;
 }
 .guests-loves__image {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
   flex-basis: 25%;
   position: relative;
+  height: 100%;
+  padding-bottom: 121px;
+  padding-top: 105px;
 }
 .guest-loves-btn-wrap {
   width: 40px;
   height: 40px;
 }
-.guests-loves__image-wrapper {
-  position: relative;
-}
-.guests-loves__image-btn {
-  position: absolute;
 
+figure {
+  color: #3077c6;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+}
+.guests-loves__dsc-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.guests-loves__dsc {
+  padding: 24px 0;
+}
+.guests-loves__dsc-city {
+  color: #bfbfbf;
+}
+.next__btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: -1.5%;
+  top: 35%;
 }
 /*media mobile*/
 @media only screen and (max-width: 768px) {
