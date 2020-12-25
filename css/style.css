@@ -263,9 +263,7 @@ header {
 .guests-loves__image {
   display: flex;
   justify-content: space-between;
-  flex-basis: 25%;
   position: relative;
-  height: 100%;
   padding-bottom: 121px;
   padding-top: 105px;
 }
@@ -626,6 +624,39 @@ figure {
     line-height: 18px;
     font-size: 15px;
   }
+  /*GUEST LOVES*/
+
+  .guests-loves__header {
+    padding-top: 40px;
+  }
+  figure {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .guests-loves__image {
+    padding-top: 32px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .guests-loves__dsc {
+    padding-top: 8px;
+    padding-bottom: 4px;
+  }
+  .guests-loves__image-photo {
+    width: 156px;
+    height: 155px;
+  }
+  .guests-loves__image-villa,
+  .guests-loves__image-hostel {
+    display: none;
+  }
+
+  .next__btn {
+    width: 28px;
+    height: 28px;
+    right: -3%;
+    top: 27%;
+  }
 }
 @media (min-width: 768px) and (max-width: 1232px) {
   /*Offer*/
@@ -638,5 +669,21 @@ figure {
   .offer__column-3 {
     height: 100%;
     flex-basis: 50%;
+  }
+  /*Guest Loves*/
+
+  .guests-loves__image {
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .guests-loves__image-wrapper {
+    flex-basis: 50%;
+  }
+  .next__btn {
+    right: -1.5%;
+    top: 45%;
+  }
+  .guests-loves__dsc-city {
+    padding-bottom: 10px;
   }
 }
