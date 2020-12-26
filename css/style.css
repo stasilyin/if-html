@@ -452,6 +452,15 @@ figure {
   .input_date-in {
     margin-right: 2%;
   }
+  .input_date-in,
+  .input_date-out,
+  .input-mobile__adults,
+  .input-mobile__children,
+  .input-mobile__rooms {
+    height: 16px;
+    padding-bottom: 8px;
+    padding-top: 24px;
+  }
   .header-form-mobie__piople {
     background-color: #ffffff;
     margin-bottom: 8px;
