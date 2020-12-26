@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" href="./img/ico/icon.png" type="image/x-png" />
     <link
       rel="apple-touch-icon"
@@ -27,74 +26,89 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <title>TripHouse</title>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- <header>
+    
+    <header>
       <div class="container">
-        <nav class="nav">
-          <img src="./img/logoBig.svg" alt="logoTripHouse" class="logo" />
-
-          <ul class="menuheader">
-            <li class="menuitem"><a href="#">Stays</a></li>
-            <li class="menuitem"><a href="#">Attractions</a></li>
-            <li>
-              <a href="#"
-                ><img src="./img/nightbutton.svg" alt="Night mode button"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="./img/accountbutton.svg" alt="login button"
-              /></a>
-            </li>
-          </ul>
-        </nav>
-        <div class="content-wrapper">
-          <h1 class="heading">
-            Discover stays<br />
-            to live, work or just relax
-          </h1>
-          <div class="headerform">
-            <form action="/" method="GET">
-              <div class="labelheader">
-                <label for="city" class="labelcity"
-                  >Your destination or hotel name</label
-                >
-                <label for="check-in-out">Check-in — Check-out</label>
+        <div class="header">
+          <div class="header-row">
+            <div class="header-heading__logo">
+              <img src="./img/logoBig.svg" alt="TripHouse"  class = "header-heading__logo-big"/>
+              <img src="./img/logo_small.png" alt="TripHouse" class = "header-heading__logo-small"/>
+            </div>
+            <div class="header-menu-wrapper__col">
+              <nav>
+                <div class="header-menu">
+                  <a href="" class ="header-menu__link">Stays</a>
+                  <a href="" class ="header-menu__link">Attractions</a>
+                </div>
+              </nav>
+              <div class="header-img-btn">
+                <svg viewBox="0 0 30 30" class="header-img-btn__night">
+                  <use xlink:href="./img/sprite.svg#night-button"></use>
+                </svg>
+                <svg viewBox="0 0 40 40" class="header-img-btn__profile">
+                  <use xlink:href="./img/sprite.svg#account-button"></use>
+                </svg>
+              <a href="#" class="header-img-btn__mobile_btn" onclick="$(this).toggleClass('mobile-btn-active');$('.header-menu__link').toggleClass('header-menu__link-activ');"><span></span></a>
               </div>
-              <div class="inputs">
-                <input
-                  type="text"
-                  id="city"
-                  class="city"
-                  placeholder="New York"
-                /><input
-                  type="date"
-                  class="check-in-out"
-                  id="check-in-out"
-                /><input
-                  type="text"
-                  class="adults-children"
-                  placeholder=" 2 Adults — 0 Children — 1 Room"
-                /><input type="submit" value="Search" class="search" />
+            </div>
+          </div>
+          <div class="header-title-row">
+            <div class="header-title__title">
+              <h1>
+                Discover stays<br />
+                to live, work or just relax
+              </h1>
+            </div>
+            <form class="header-form row">
+              <div class="header-form__label">
+                <label>Your destination or hotel name</label>
+                <label>Check-in — Check-out</label>
               </div>
+              <div class="header-form-input-row">
+                <input type="text" placeholder="Your destination or hotel name"/><input type="date" placeholder="2 Adults — 0 Children — 1 Room"/><input type="text" placeholder="2 Adults - 0 Children - 1 Room"/><input type="submit" value="Search"/>
+                </div>
+                </div>
+                <div class="header-form-mobie_row">
+                  <div class="header-form-mobie__search header-form-col-inputs">
+                    <svg viewBox="0 0 16 16" class="search-icon">
+                      <use xlink:href="./img/sprite.svg#search-icon"></use>
+                    </svg>
+                    <input type="text" class="input_search" placeholder="Your destination or hotel name">
+                  </div>
+                  <div class="header-form-mobie__date header-form-col-inputs">
+                    <label for="date-in" class="date-in">Check-in date</label><label for="date-out" class="date-out">Check-out date</label>
+                    <input type="date" id ="date-in" class="input_date-in"><input type="date" id ="date-out" class="input_date-out">
+                  </div>
+                  <div class="header-form-mobie__piople header-form-col-inputs">
+                    <label for="adults" class="adults_label">Adults</label>
+                    <label for="children" class="children_label">Children</label>
+                    <label for="rooms" class="rooms_label">Rooms</label>
+                    <input type="text" placeholder="2" id="adults" class="input-mobile__adults"><span class="vertical-line-input"></span><input placeholder="0" type="text" class="input-mobile__children" id="children"><span class="vertical-line-input"></span><input placeholder="1" type="text" id="rooms" class="input-mobile__rooms">
+                  </div>
+                  <div class="header-form-mobie__search-btn header-form-col-inputs">
+                    <input type="submit" class = "search_btn" value="Search">
+                  </div>
+                </div>
             </form>
+            <div class="header-download-link-row">
+              
+              <img src="./img/google-play-badge.svg" alt="">
+              <img src="./img/downloadAppStore.svg" alt="">
+            </div>
+          </div>
           </div>
         </div>
-        <div class="linkstore">
-          <a href="#"
-            ><img
-              src="./img/google-play-badge.svg"
-              alt="Image link download to Google Play"
-              class="dwnlinkgplay" /></a
-          ><a href="#"
-            ><img
-              src="./img/downloadAppStore.svg"
-              alt="Image link download to AppStore"
-          /></a>
-        </div>
       </div>
-    </header> -->
+    </header>
     <section>
       <div class="container">
         <div class="offer-heading__row">
@@ -137,6 +151,67 @@
         </div>
       </div>
     </section>
+  <!--   <section class="guest-loves">
+      <div class="container">
+        <div class="guests-loves__header"><h2>Homes guests loves</h2></div>
+        <div class="guests-loves__image">
+          <figure class="guests-loves__image-wrapper">
+            <img src="./img/hotel.png" alt="Hotel photo" class="guests-loves__image-photo">
+            <figcaption class = "guests-loves__dsc-wrapper">
+              <span class = "guests-loves__dsc">Hotel Leopold</span>
+              <span class="guests-loves__dsc-city"> Saint Petersburg, Russia</span>
+            </figcaption>
+          </figure>
+          <figure class="guests-loves__image-wrapper" class="guests-loves__image-appartments">
+            <img src="./img/apartments.png" alt="Appartments photo" class="guests-loves__image-photo">
+            <figcaption class = "guests-loves__dsc-wrapper">
+              <span class = "guests-loves__dsc">Apartment Sunshine</span>
+              <span class="guests-loves__dsc-city">Santa  Cruz de Tenerife,<br> Spain</span>
+            </figcaption>
+          </figure>
+          <figure class="guests-loves__image-wrapper guests-loves__image-villa">
+            <img src="./img/villa.png" alt="villa photo" class="guests-loves__image-photo">
+            <figcaption class = "guests-loves__dsc-wrapper">
+              <span class = "guests-loves__dsc">Villa Kunerad</span>
+              <span class="guests-loves__dsc-city">Vysokie Tatry, Slowakia</span>
+            </figcaption>
+          </figure>
+          <figure class="guests-loves__image-wrapper guests-loves__image-hostel">
+            <img src="./img/hostel.png" alt="Hostel photo" class="guests-loves__image-photo">
+            <figcaption class = "guests-loves__dsc-wrapper">
+              <span class = "guests-loves__dsc">Hostel Friendship</span>
+              <span class="guests-loves__dsc-city">Berlin, Germany</span>
+            </figcaption>
+             <div class="guests-loves__image-btn">
+              <svg viewBox="0 0 48 48" class="guest-loves-btn-wrap">
+                <use xlink:href="./img/sprite.svg#guest-loves-btn"></use>
+              </svg> 
+             </figure>
+             <svg fill="none" viewBox="0 0 48 48" class="next__btn" xmlns="http://www.w3.org/2000/svg" id="next-btn">
+              <g filter="url(#filter0_d)">
+              <circle cx="24" cy="20" r="20" fill="#F3F3F4"/>
+              <path d="M19.9412 29.8235L26.1 21.6118C26.6333 20.9007 26.6333 19.9229 26.1 19.2118L19.9412 11" stroke="#383838" stroke-width="2"/>
+              </g>
+              <defs>
+              <filter id="filter0_d" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+               <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+              <feOffset dy="4"/>
+              <feGaussianBlur stdDeviation="2"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/> 
+              </filter>
+              </defs>
+             
+              <use xlink:href="#next-btn"></use>
+            </svg>
+          </div>
+          
+         
+        </div>
+      </div>
+    </section> -->
     <footer>
       <div class="container">
         <div class="footer">
