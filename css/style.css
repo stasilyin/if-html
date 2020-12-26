@@ -251,7 +251,7 @@ header {
   display: none;
 }
 /* BLOCK GUEST LOVES */
-.guest-loves {
+/* .guest-loves {
   background-color: #eaf0f9;
 }
 .guests-loves__header {
@@ -295,7 +295,7 @@ figure {
   position: absolute;
   right: -1.5%;
   top: 35%;
-}
+} */
 /*media mobile*/
 @media only screen and (max-width: 768px) {
   /*header mobile*/
@@ -635,7 +635,7 @@ figure {
   }
   /*GUEST LOVES*/
 
-  .guests-loves__header {
+  /* .guests-loves__header {
     padding-top: 40px;
   }
   figure {
@@ -665,7 +665,7 @@ figure {
     height: 28px;
     right: -3%;
     top: 27%;
-  }
+  } */
 }
 @media (min-width: 768px) and (max-width: 1232px) {
   /*Offer*/
@@ -681,7 +681,7 @@ figure {
   }
   /*Guest Loves*/
 
-  .guests-loves__image {
+  /* .guests-loves__image {
     text-align: center;
     flex-wrap: wrap;
   }
@@ -694,5 +694,5 @@ figure {
   }
   .guests-loves__dsc-city {
     padding-bottom: 10px;
-  }
+  } */
 }
