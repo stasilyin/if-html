@@ -21,7 +21,7 @@
       sizes="16x16"
       href="./img/ico/icon-16x16.png"
     />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="manifest" href="./img/ico/site.webmanifest" />
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
@@ -69,34 +69,34 @@
               </h1>
             </div>
             <form class="header-form row">
-              <div class="header-form__label">
-                <label>Your destination or hotel name</label>
-                <label>Check-in — Check-out</label>
-              </div>
               <div class="header-form-input-row">
-                <input type="text" placeholder="Your destination or hotel name"/><input type="date" placeholder="2 Adults — 0 Children — 1 Room"/><input type="text" placeholder="2 Adults - 0 Children - 1 Room"/><input type="submit" value="Search"/>
+                <div class = "header-form-input__wrap"><input type="text" id = "city" required/><label for="city" class ="city">Your destination or hotel name</label></div>
+                <div class = "header-form-input__wrap"><input type="text" id = "date" required onblur="(this.type='text')" onfocus="(this.type='date')" /><label for="date" class ="date">Check-in — Check-out</label></div>
+                <div class = "header-form-input__wrap"><input type="text" id = "people" required/><label for="people" class ="people">2 Adults - 0 Children - 1 Room</label></div>
+                <div class = "header-form-input__wrap"><input type="submit" value="Search"/></div>
                 </div>
                 </div>
                 <div class="header-form-mobie_row">
-                  <div class="header-form-mobie__search header-form-col-inputs">
+                  <div class="header-form-mobie__search">
                     <svg viewBox="0 0 16 16" class="search-icon">
                       <use xlink:href="./img/sprite.svg#search-icon"></use>
                     </svg>
-                    <input type="text" class="input_search" placeholder="Your destination or hotel name">
+                    <input type="text" class="input_search" id="search" required><label for="search" class="search_label label-mobile">Your destination or hotel name</label>
                   </div>
-                  <div class="header-form-mobie__date header-form-col-inputs">
-                    <label for="date-in" class="date-in">Check-in date</label><label for="date-out" class="date-out">Check-out date</label>
-                    <input type="date" id ="date-in" class="input_date-in"><input type="date" id ="date-out" class="input_date-out">
+                    <div class="header-form-mobie__date">
+                    <div class = "header-form-mobie__date-in"><input type="text" id ="date-in" class="input_date-in" required onblur="(this.type='text')" onfocus="(this.type='date')"><label for="date-in" class="date-in label-mobile">Check-in</label></div>
+                    <div class = "header-form-mobie__date-out"> <input type="text" id ="date-out" class="input_date-out" required onblur="(this.type='text')" onfocus="(this.type='date')"><label for="date-out" class="date-out label-mobile">Check-out</label></div>
                   </div>
-                  <div class="header-form-mobie__piople header-form-col-inputs">
-                    <label for="adults" class="adults_label">Adults</label>
-                    <label for="children" class="children_label">Children</label>
-                    <label for="rooms" class="rooms_label">Rooms</label>
-                    <input type="text" placeholder="2" id="adults" class="input-mobile__adults"><span class="vertical-line-input"></span><input placeholder="0" type="text" class="input-mobile__children" id="children"><span class="vertical-line-input"></span><input placeholder="1" type="text" id="rooms" class="input-mobile__rooms">
+                   <div class="header-form-mobie__piople">
+                    
+                    <div class = "header-form-mobie__adults"><input type="text" id="adults" class="input-mobile__adults" required><label for="adults" class="adults_label label-mobile">Adults</label></div> <span class="vertical-line-input-one"></span>
+                   
+                    <div class = "header-form-mobie__children"><input type="text" class="input-mobile__children" id="children" required><label for="children" class="children_label label-mobile">Children</label></div> <span class="vertical-line-input-two"></span>
+                    <div class = "header-form-mobie__date-rooms"><input type="text" id="rooms" class="input-mobile__rooms" required><label for="rooms" class="rooms_label label-mobile">Rooms</label></div>
                   </div>
-                  <div class="header-form-mobie__search-btn header-form-col-inputs">
+                  <div class="header-form-mobie__search-btn">
                     <input type="submit" class = "search_btn" value="Search">
-                  </div>
+                  </div> 
                 </div>
             </form>
             <div class="header-download-link-row">
@@ -209,6 +209,148 @@
           </div>
           
          
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="distenation">
+          <div class="distenation-title"><h2>The best destinations</h2></div>
+          <div class="distenation-tab">
+            <a href="#regions" class="distenation-tab__item">Regions</a>
+            <a href="#cities" class="distenation-tab__item">Cities</a>
+            <a href="#places" class="distenation-tab__item">Places</a>
+          </div>
+          <div id="regions" class="distenation-tab__content">
+          <div class="distenation-image">
+            <figure>
+              <div class="distenation-image-items"><img src="./img/regions/maldives.png" alt="Maldives"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>Maldives</figcaption>
+            </figure>
+            <figure>
+              <div class="distenation-image-items"><img src="./img/regions/spain.png" alt="Spain"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>Spain</figcaption>
+            </figure>
+            <figure>
+              <div class="distenation-image-items"><img src="./img/regions/norway.png" alt="Norway"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>Norway</figcaption>
+            </figure>
+            <figure>
+              <div class="distenation-image-items"><img src="./img/regions/island.png" alt="Island"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>Island</figcaption>
+            </figure>
+            <figure>
+              <div class="distenation-image-items"><img src="./img/regions/japan.png" alt="Japan"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>Japan</figcaption>
+            </figure>
+            <figure>
+              <div class="distenation-image-items"><img src="./img/regions/france.png" alt="France"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>France</figcaption>
+            </figure>
+            <figure>
+              <div class="distenation-image-items"><img src="./img/regions/scottland.png" alt="Scottland"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>Scottland</figcaption>
+            </figure>
+            <figure>
+              <div class="distenation-image-items"><img src="./img/regions/russian.png" alt="Russian"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>Russian</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div id="cities" class="distenation-tab__content">
+          <div class="distenation-image">
+            <figure>
+              <div class="distenation-image-items"><img src="./img/cities/germany.png" alt="Berlin, Germany"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>Berlin, Germany</figcaption>
+            </figure>
+            <figure>
+              <div class="distenation-image-items"><img src="./img/cities/france.png" alt=">Paris, France"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>Paris, France</figcaption>
+            </figure>
+            <figure>
+              <div class="distenation-image-items"><img src="./img/cities/budapest.png" alt="Budapest, Hungary"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>Budapest, Hungary</figcaption>
+            </figure>
+            <figure>
+              <div class="distenation-image-items"><img src="./img/cities/london.png" alt="London, United Kingdom"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>London, United Kingdom</figcaption>
+            </figure>
+            <figure>
+              <div class="distenation-image-items"><img src="./img/cities/spain.png" alt="Barcelona, Spain"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>Barcelona, Spain</figcaption>
+            </figure>
+            <figure>
+              <div class="distenation-image-items"><img src="./img/cities/georgia.png" alt="Tbilisi, Georgia"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>Tbilisi, Georgia</figcaption>
+            </figure>
+            <figure>
+              <div class="distenation-image-items"><img src="./img/cities/moscow.png" alt="Moscow, Russia"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>Moscow, Russia</figcaption>
+            </figure>
+            <figure>
+              <div class="distenation-image-items"><img src="./img/cities/amsterdam.png" alt="Amsterdam, Netherlands"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>Amsterdam, Netherlands</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div id="places" class="distenation-tab__content">
+          <div class="distenation-image">
+            <figure>
+              <div class="distenation-image-items"><img src="./img/places/castle.png" alt="Edinburgh Castle, Edinburgh, United Kingdom"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>Edinburgh Castle, Edinburgh, United Kingdom</figcaption>
+            </figure>
+            <figure>
+              <div class="distenation-image-items"><img src="./img/places/german.png" alt="Neuschwanstein, Fussen, Germany"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>Neuschwanstein, Fussen, Germany</figcaption>
+            </figure>
+            <figure>
+              <div class="distenation-image-items"><img src="./img/places/london.png" alt="Big Ben, London, United Kingdom"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>Big Ben, London, United Kingdom</figcaption>
+            </figure>
+            <figure>
+              <div class="distenation-image-items"><img src="./img/places/italy.png" alt="Colosseum, Roma, Italy"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>Colosseum, Roma, Italy</figcaption>
+            </figure>
+            <figure>
+              <div class="distenation-image-items"><img src="./img/places/switzerland.png" alt="Matterhorn, Zermatt, Switzerland"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>Matterhorn, Zermatt, Switzerland</figcaption>
+            </figure>
+            <figure>
+              <div class="distenation-image-items"><img src="./img/places/poland.png" alt="Morskie Oko, Poland"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>Morskie Oko, Poland</figcaption>
+            </figure>
+            <figure>
+              <div class="distenation-image-items"><img src="./img/places/croatia.png" alt="Krka, Croatia"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>Krka, Croatia</figcaption>
+            </figure>
+            <figure>
+              <div class="distenation-image-items"><img src="./img/places/potrugaliya.png" alt="Cabo da roca, Sintra, Portugal"><div class="distenation-image-items-button"><input type="button" value="Book now" class="book-now"></div></div>
+              <figcaption>Cabo da roca, Sintra, Portugal</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="destenation-btn-slider-mobile">
+          <div class="btn-slider-mobile"><svg width="20" height="20" viewBox="0 -5 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.17647 1.00001L9.38823 7.15884C10.0993 7.69217 11.0771 7.69217 11.7882 7.15884L20 1.00001" stroke="#383838" stroke-width="2"/>
+            </svg>
+            </div></div>
+          <div class="destenation-btn-slider">
+          <div class="btn-slider"><svg width="21" height="9" viewBox="0 0 21 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.17647 1.00001L9.38823 7.15884C10.0993 7.69217 11.0771 7.69217 11.7882 7.15884L20 1.00001" stroke="#383838" stroke-width="2"/>
+            </svg>
+            </div></div>
+            </div>
+            <div class="distenation-banner">
+              <div class="distenation-banner-image">
+                <img src="./img/user.png" alt="user avatar">
+              </div>
+              <div class="distenation-banner-dsc">
+                <span>Sign up and get 20% off your first booking</span>
+                <a href="" class = "distenation-banner-dsc__btn">Sign up</a>
+              </div>
+              <div class="distenation-banner-btn">
+              <span class="distenation-banner__close"></span>
+            </div>
         </div>
       </div>
     </section>

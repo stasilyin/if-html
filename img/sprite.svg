@@ -46,5 +46,8 @@
               </filter>
               </defs>
           </symbol>
+          <symbol id="btn-slider"> 
+          <path d="M1.17647 1.00001L9.38823 7.15884C10.0993 7.69217 11.0771 7.69217 11.7882 7.15884L20 1.00001" stroke="#383838" stroke-width="2"/>
+          </symbol>
 
         </svg>
