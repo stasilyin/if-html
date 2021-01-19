@@ -851,8 +851,8 @@ figure {
   .input_search:not(:focus):valid ~ label {
     font-size: 12px;
     font-weight: 400;
-    top: 12%;
-    left: 12%;
+    top: 2%;
+    left: 11.5%;
     transition: 0.5s;
   }
 
@@ -868,7 +868,7 @@ figure {
   .input-mobile__rooms:not(:focus):valid ~ label {
     font-size: 12px;
     font-weight: 400;
-    top: 12%;
+    top: 2%;
     left: 3%;
     transition: 0.5s;
   }
