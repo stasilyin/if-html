@@ -101,7 +101,7 @@ footer {
 a {
   text-decoration: none;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 23px;
   color: #ffffff;
 }
@@ -323,10 +323,13 @@ figure {
   width: 40px;
   height: 40px;
   position: absolute;
-  right: -1.5%;
-  top: 35%;
+  right: -1.2%;
+  top: 37%;
 }
 /*destinations section*/
+.distenation-tab .distenation-tab__item:hover {
+  background-color: #0056b3;
+}
 .distenation-title {
   text-align: center;
 }
@@ -397,7 +400,7 @@ figure {
 .distenation-image figure {
   margin-inline-start: 0;
   margin-inline-end: 0;
-  margin-bottom: 83px;
+  margin-bottom: 75px;
 }
 
 .distenation-image-items {
@@ -441,7 +444,7 @@ figure {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 48px;
+  margin-top: 7px;
 }
 .btn-slider-active {
   filter: drop-shadow(0px -4px 4px rgba(0, 0, 0, 0.25));
@@ -506,6 +509,7 @@ figure {
   right: 24px;
   top: 24px;
 }
+
 .distenation-banner-btn:hover {
   cursor: pointer;
 }
@@ -788,6 +792,7 @@ figure {
     font-size: 15px;
     line-height: 20px;
     text-align: right;
+    
   }
   .header-menu a:last-child,
   .header-menu a:first-child {
@@ -803,7 +808,7 @@ figure {
   .header-menu__link {
     transition: 0.7s;
     transform: translateY(40%);
-
+    
     opacity: 0;
   }
   .header-menu__link:last-child {
@@ -1268,7 +1273,11 @@ figure {
 .banner--disable {
   display: none;
 }
-
+.banner-wrapper img,
+.banner-wrapper a,
+.banner-wrapper span {
+  padding: 0 16px;
+}
 }
 @media (min-width: 768px) and (max-width: 1232px) {
   /*header*/
